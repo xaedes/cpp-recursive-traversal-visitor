@@ -1,0 +1,606 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Run with -? for options
+
+-------------------------------------------------------------------------------
+tiny tree string
+  iterate counting [N=6]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(27)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100           199     3.4626 ms
+                                        176.116 ns    175.754 ns    176.859 ns
+                                        2.52317 ns    1.29023 ns    4.19741 ns
+
+ShrPtrNode<value_type>::visit                  100            83      3.486 ms
+                                        414.602 ns     413.94 ns    416.506 ns
+                                        5.29368 ns    2.16867 ns    11.4403 ns
+
+
+-------------------------------------------------------------------------------
+tiny tree string
+  iterate recursive counting [N=6]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(46)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100           152     3.4656 ms
+                                        233.329 ns    232.572 ns    235.783 ns
+                                        6.30101 ns    2.29533 ns    14.1019 ns
+
+ShrPtrNode<value_type>::visit                  100            80      3.472 ms
+                                        431.725 ns    425.763 ns    457.575 ns
+                                        54.4652 ns    7.55268 ns    128.464 ns
+
+
+-------------------------------------------------------------------------------
+tiny tree string
+  to xml [N=6]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(67)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100            21     3.5931 ms
+                                        1.69833 us     1.6909 us    1.72552 us
+                                        63.2596 ns    18.0952 ns    143.019 ns
+
+ShrPtrNode<value_type>::visit                  100            19     3.5929 ms
+                                        1.87963 us    1.87026 us    1.90837 us
+                                        75.3214 ns    28.4878 ns    162.993 ns
+
+
+-------------------------------------------------------------------------------
+tiny tree int
+  iterate counting [N=6]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(27)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100           196     3.4692 ms
+                                        177.148 ns    176.862 ns    177.745 ns
+                                         2.0093 ns    1.12541 ns    3.90831 ns
+
+ShrPtrNode<value_type>::visit                  100            84     3.4692 ms
+                                        415.917 ns    412.798 ns    428.774 ns
+                                        27.8158 ns    3.40857 ns    65.0752 ns
+
+
+-------------------------------------------------------------------------------
+tiny tree int
+  iterate recursive counting [N=6]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(46)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100           153     3.4731 ms
+                                        224.196 ns     223.83 ns    225.092 ns
+                                        2.73739 ns    1.36906 ns    5.63486 ns
+
+ShrPtrNode<value_type>::visit                  100            81      3.483 ms
+                                        448.852 ns    436.136 ns    470.185 ns
+                                        82.2795 ns    55.8299 ns    121.146 ns
+
+
+-------------------------------------------------------------------------------
+tiny tree int
+  to xml [N=6]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(67)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             9     3.6567 ms
+                                        4.08311 us    4.05722 us    4.15411 us
+                                        192.221 ns    30.9861 ns     400.11 ns
+
+ShrPtrNode<value_type>::visit                  100             9     3.8196 ms
+                                        4.26911 us    4.24056 us    4.39144 us
+                                        255.678 ns    46.6999 ns    598.219 ns
+
+
+-------------------------------------------------------------------------------
+small tree string
+  iterate counting [N=111]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(27)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100            15     3.6345 ms
+                                         2.4102 us    2.36307 us    2.55567 us
+                                        358.882 ns    35.4416 ns    782.645 ns
+
+ShrPtrNode<value_type>::visit                  100             6     4.1382 ms
+                                        6.85183 us    6.83667 us    6.90833 us
+                                        133.919 ns    28.9727 ns    311.569 ns
+
+
+-------------------------------------------------------------------------------
+small tree string
+  iterate recursive counting [N=111]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(46)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100            11     3.6388 ms
+                                           3.24 us    3.22482 us    3.25582 us
+                                        79.2245 ns    67.9927 ns    100.369 ns
+
+ShrPtrNode<value_type>::visit                  100             5     3.6185 ms
+                                          7.277 us     7.2588 us     7.3364 us
+                                        150.112 ns     46.594 ns    335.817 ns
+
+
+-------------------------------------------------------------------------------
+small tree string
+  to xml [N=111]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(67)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             2     4.5922 ms
+                                        22.8785 us    22.8005 us    23.2145 us
+                                        706.161 ns    119.552 ns    1.66119 us
+
+ShrPtrNode<value_type>::visit                  100             2     5.4294 ms
+                                        26.8015 us    26.7135 us     27.186 us
+                                        803.406 ns    120.552 ns    1.89542 us
+
+
+-------------------------------------------------------------------------------
+small tree int
+  iterate counting [N=111]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(27)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100            15      3.627 ms
+                                          2.402 us    2.39367 us    2.43793 us
+                                        75.2825 ns    12.0081 ns    177.086 ns
+
+ShrPtrNode<value_type>::visit                  100             6     4.1184 ms
+                                          6.913 us    6.88633 us      6.972 us
+                                        191.487 ns    85.4634 ns     333.98 ns
+
+
+-------------------------------------------------------------------------------
+small tree int
+  iterate recursive counting [N=111]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(46)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100            12     3.6912 ms
+                                        3.13467 us    3.12383 us    3.14875 us
+                                        62.6105 ns    48.3674 ns    100.114 ns
+
+ShrPtrNode<value_type>::visit                  100             5      3.636 ms
+                                         7.2582 us     7.2416 us     7.3228 us
+                                        146.249 ns    29.6182 ns    341.103 ns
+
+
+-------------------------------------------------------------------------------
+small tree int
+  to xml [N=111]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(67)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             1     6.2428 ms
+                                         67.544 us     66.529 us     69.764 us
+                                         7.2781 us    3.74221 us    11.9481 us
+
+ShrPtrNode<value_type>::visit                  100             1     6.9567 ms
+                                         72.107 us     70.747 us     74.494 us
+                                        9.00874 us    5.69416 us     12.996 us
+
+
+-------------------------------------------------------------------------------
+medium tree string
+  iterate counting [N=1111]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(27)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             2     4.7418 ms
+                                        23.5985 us    23.5445 us    23.7845 us
+                                        456.458 ns    141.841 ns    1.03979 us
+
+ShrPtrNode<value_type>::visit                  100             1      6.822 ms
+                                         68.783 us     68.376 us     70.311 us
+                                        3.55739 us    892.531 ns    8.21447 us
+
+
+-------------------------------------------------------------------------------
+medium tree string
+  iterate recursive counting [N=1111]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(46)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             2       6.62 ms
+                                         33.372 us    32.6195 us     34.898 us
+                                        5.26756 us    2.92831 us    8.50225 us
+
+ShrPtrNode<value_type>::visit                  100             1     7.2495 ms
+                                          72.24 us     71.349 us      74.14 us
+                                         6.3245 us    3.44352 us    10.5291 us
+
+
+-------------------------------------------------------------------------------
+medium tree string
+  to xml [N=1111]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(67)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             1    22.1305 ms
+                                        216.691 us    216.358 us    217.815 us
+                                        2.78663 us    759.655 ns    6.23155 us
+
+ShrPtrNode<value_type>::visit                  100             1    26.2075 ms
+                                         265.66 us     264.55 us    267.772 us
+                                        7.57408 us     4.0391 us    12.4027 us
+
+
+-------------------------------------------------------------------------------
+medium tree int
+  iterate counting [N=1111]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(27)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             2     4.7184 ms
+                                        23.6135 us     23.537 us     23.914 us
+                                        703.284 ns    94.8736 ns    1.66267 us
+
+ShrPtrNode<value_type>::visit                  100             1     6.8521 ms
+                                         68.984 us      68.63 us     70.245 us
+                                        3.03056 us     909.34 ns    6.89892 us
+
+
+-------------------------------------------------------------------------------
+medium tree int
+  iterate recursive counting [N=1111]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(46)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             2     6.3132 ms
+                                         31.148 us    30.9535 us     31.328 us
+                                         956.16 ns     839.64 ns    1.16864 us
+
+ShrPtrNode<value_type>::visit                  100             1     7.2339 ms
+                                         73.108 us     71.961 us     75.126 us
+                                        7.56967 us    4.78756 us    10.9185 us
+
+
+-------------------------------------------------------------------------------
+medium tree int
+  to xml [N=1111]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(67)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             1    63.7105 ms
+                                         673.15 us    669.308 us    676.094 us
+                                        17.1338 us    13.7349 us    21.5684 us
+
+ShrPtrNode<value_type>::visit                  100             1    71.3888 ms
+                                        715.476 us    712.754 us    717.484 us
+                                        11.8273 us    7.83654 us    18.0307 us
+
+
+-------------------------------------------------------------------------------
+big tree string
+  iterate counting [N=19531]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(27)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             1    44.9033 ms
+                                        451.381 us    448.984 us    456.671 us
+                                        17.2161 us    9.43045 us    30.9655 us
+
+ShrPtrNode<value_type>::visit                  100             1     121.21 ms
+                                        1.25952 ms     1.2399 ms    1.29191 ms
+                                        126.599 us    87.1536 us    184.637 us
+
+
+-------------------------------------------------------------------------------
+big tree string
+  iterate recursive counting [N=19531]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(46)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             1    62.2783 ms
+                                        618.082 us    615.988 us    623.057 us
+                                        15.5189 us    7.87586 us    28.9314 us
+
+ShrPtrNode<value_type>::visit                  100             1    128.462 ms
+                                        1.30117 ms    1.29035 ms    1.32099 ms
+                                        72.2565 us    45.5206 us     113.92 us
+
+
+-------------------------------------------------------------------------------
+big tree string
+  to xml [N=19531]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(67)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             1     413.39 ms
+                                        4.17642 ms    4.14642 ms    4.21763 ms
+                                        178.523 us    135.381 us     238.04 us
+
+ShrPtrNode<value_type>::visit                  100             1    498.642 ms
+                                        5.02219 ms    4.96086 ms     5.1308 ms
+                                        406.381 us    273.957 us    739.538 us
+
+
+-------------------------------------------------------------------------------
+big tree int
+  iterate counting [N=19531]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(27)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             1    45.1199 ms
+                                        448.912 us    447.466 us    452.849 us
+                                        11.2406 us    5.12529 us    23.8476 us
+
+ShrPtrNode<value_type>::visit                  100             1    124.104 ms
+                                        1.25361 ms    1.23978 ms    1.28146 ms
+                                        96.3726 us     58.068 us    168.529 us
+
+
+-------------------------------------------------------------------------------
+big tree int
+  iterate recursive counting [N=19531]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(46)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             1     58.596 ms
+                                        586.303 us    584.953 us    589.944 us
+                                        10.5162 us    4.78777 us     22.393 us
+
+ShrPtrNode<value_type>::visit                  100             1     128.58 ms
+                                        1.28023 ms    1.27514 ms    1.29388 ms
+                                        39.1281 us    12.5279 us    78.6793 us
+
+
+-------------------------------------------------------------------------------
+big tree int
+  to xml [N=19531]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(67)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             1     1.15803 s
+                                        11.4627 ms    11.4119 ms    11.5202 ms
+                                         277.46 us     244.79 us     324.89 us
+
+ShrPtrNode<value_type>::visit                  100             1     1.26162 s
+                                        12.6308 ms    12.5427 ms    12.7834 ms
+                                        575.439 us     392.43 us    1.05577 ms
+
+
+-------------------------------------------------------------------------------
+huge tree string
+  iterate counting [N=488281]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(27)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             1     1.44338 s
+                                         14.265 ms    14.2337 ms    14.3052 ms
+                                        179.622 us    141.798 us    244.007 us
+
+ShrPtrNode<value_type>::visit                  100             1     4.25241 s
+                                        42.7225 ms    42.6424 ms    42.8436 ms
+                                        496.946 us    367.048 us    844.248 us
+
+
+-------------------------------------------------------------------------------
+huge tree string
+  iterate recursive counting [N=488281]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(46)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             1     1.81786 s
+                                        18.1962 ms    18.1576 ms    18.2485 ms
+                                        228.283 us    174.108 us    319.159 us
+
+ShrPtrNode<value_type>::visit                  100             1     4.35424 s
+                                        43.3153 ms    43.2342 ms    43.4294 ms
+                                        488.359 us    380.149 us    696.201 us
+
+
+-------------------------------------------------------------------------------
+huge tree string
+  to xml [N=488281]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(67)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             1     11.1185 s
+                                        111.374 ms    111.242 ms    111.562 ms
+                                        798.631 us    584.216 us    1.19101 ms
+
+ShrPtrNode<value_type>::visit                  100             1     13.7314 s
+                                        137.641 ms    137.443 ms    137.924 ms
+                                        1.19827 ms    902.049 us    1.63901 ms
+
+
+-------------------------------------------------------------------------------
+huge tree int
+  iterate counting [N=488281]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(27)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             1      1.3271 s
+                                        13.2098 ms    13.1695 ms    13.2613 ms
+                                        230.819 us    183.473 us    289.777 us
+
+ShrPtrNode<value_type>::visit                  100             1     3.98759 s
+                                        39.8143 ms    39.7465 ms    39.9108 ms
+                                        408.559 us     309.86 us    659.926 us
+
+
+-------------------------------------------------------------------------------
+huge tree int
+  iterate recursive counting [N=488281]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(46)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             1     1.69447 s
+                                        16.9122 ms     16.857 ms    16.9866 ms
+                                        324.481 us    248.759 us    433.035 us
+
+ShrPtrNode<value_type>::visit                  100             1     4.05579 s
+                                        40.7258 ms    40.6403 ms    40.8563 ms
+                                        530.199 us    383.594 us    825.727 us
+
+
+-------------------------------------------------------------------------------
+huge tree int
+  to xml [N=488281]
+-------------------------------------------------------------------------------
+..\..\..\recursive_traversal_visitor\benchmarks\benchmark_visit.cpp(67)
+...............................................................................
+
+benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+Node<value_type>::visit                        100             1      30.354 s
+                                        301.921 ms    301.532 ms    302.378 ms
+                                         2.1411 ms    1.82977 ms    2.69104 ms
+
+ShrPtrNode<value_type>::visit                  100             1     32.9158 s
+                                        326.471 ms    326.082 ms    326.901 ms
+                                         2.0783 ms    1.83023 ms    2.41593 ms
+
+
+===============================================================================
+

@@ -222,7 +222,7 @@ TEST_CASE("medium tree string", "[benchmark][recursive_traversal_visitor]")
 
 TEST_CASE("medium tree int", "[benchmark][recursive_traversal_visitor]")
 {
-    int num_levels = 2;
+    int num_levels = 3;
     int num_children = 10;
     int k = 0, i = 0;
     auto root = createTreeInt(k, num_children, num_levels);
