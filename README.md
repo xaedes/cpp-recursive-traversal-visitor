@@ -2,7 +2,7 @@
 
 Allows traversal of arbitrary tree types, like this:
 
-    root.visit([](auto& visit, const NodeStr* node){
+    root.visit([](auto& visit, const Node<std::string>* node){
         std::string indent = "";
         for (int i=0; i<visit.depth; ++i) indent += "  ";
         std::cout << indent << "<" << node->value << ">" << "\n";
@@ -16,7 +16,7 @@ Allows traversal of arbitrary tree types, like this:
     
 or like this for drawing nested ImGui::TreeNode:
 
-    root.visit([](auto& visit, const NodeStr* node){
+    root.visit([](auto& visit, const Node<std::string>* node){
         if (ImGui::TreeNode(node->value)
         {
             visit.children();
