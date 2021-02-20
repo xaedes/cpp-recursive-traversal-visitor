@@ -14,6 +14,18 @@ Allows traversal of arbitrary tree types, like this:
         std::cout << indent << "</" << node->value << ">" << "\n";
     });
     
+or like this for drawing nested ImGui::TreeNode:
+
+    root.visit([](auto& visit, const NodeStr* node){
+        if (ImGui::TreeNode(node->value)
+        {
+            visit.children();
+            ImGui::TreePop();
+        }
+        else
+            visit.skipChildren();
+    });
+    
 Example tree types which store children in different ways are defined:
 
     template <typename value_type>
