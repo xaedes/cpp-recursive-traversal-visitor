@@ -35,6 +35,7 @@ if (TARGET Catch2::Catch2)
     )
     set(
         BENCHMARK_MODULES
+        benchmark_visit
     )
     include(CTest)
     include(Catch)
